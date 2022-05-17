@@ -1,0 +1,77 @@
+
+.wrapper
+{
+  position: relative;
+  max-width:100%;
+  width:100%;
+  height: 56.25vw;
+  max-height: 1080px;
+  box-shadow: 0 0 15px rgba(0,0,0,.35);
+}
+
+.slider-wrap
+{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider
+{
+  position: relative;
+  left: 0;
+  height: 100%;
+  width: 500%;
+  transition: 300ms ease-in-out;
+}
+
+.slide
+{
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-size: cover;
+}
+
+.slide:nth-child(1) { background-image: url(images/pexels-donald-tong-189333.jpg); }
+.slide:nth-child(2) { background-image: url(images/pexels-photo-279719.jpeg); }
+.slide:nth-child(3) { background-image: url(images/pexels-mikhail-nilov-6707628.jpg);}
+.slide:nth-child(4) { background-image: url(images/pexels-jubair-bin-iqbal-5168859.jpg); }
+.slide:nth-child(5) { background-image: url(images/pexels-vlada-karpovich-4050318.jpg); }
+
+.bttn
+{
+  position: absolute;
+  font-size:2em;
+  top: 500px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 150ms ease-in-out;
+  padding-bottom:10px;
+  padding-left:10px; padding-right:10px;
+}
+
+.bttn:first-child { left:8px;}
+.bttn:last-child  { right:8px; }
+
+.bttn:hover  { background-color: white; border-radius: 10%; }
+.bttn:active
+{
+  transform: scale(.97);
+  background: #000;
+}
+
+@media(max-width: 950px)
+{
+  .slide {background-position: center;}
+  .bttn { top:5.5em; color:rgb(71, 69, 69);}
+  .bttn:hover { background:none; }
+  .bttn:active
+{
+  transform: scale(.97);
+  background:none;
+}
+  .bttn:first-child { left: calc(7% - 1em); }
+  .bttn:last-child { left: calc(80% + 1em); }
+
+}

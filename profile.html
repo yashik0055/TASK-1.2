@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+        @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+        @media screen and (max-width:600px) {
+            .ctnt{width:100%}
+            
+            
+        }  
+    </style>
+    <title>Profile</title>
+    <link rel="icon" type="image/jpg" href="assets/images/ico.jpg">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="ico">
+            <a href="https://www.instagram.com/rick_r0lled/" target="_blank"><i class="bi bi-instagram" id="insta"></i></a>
+            <a href="https://twitter.com/YouGotRickRoll" target="_blank"><i class="bi bi-twitter" id="twitter" ></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube" id="yt"></i></a>
+        </div>
+        <div class="info">
+            <nav class="navlink">        
+            <a href="tel:+919876543210" class="call"><i class="bi bi-telephone-fill"></i>+919876543210</a>
+            <a href="Track Order.html"><i class="bi bi-truck"></i> Track</a>
+            <a href="About.html">About</a>
+            </nav>
+        </div>
+    </div>
+        <div id="navhead">
+            <div class="left">
+                <a href="home.html"><img class="logo" src="images/logo.png"></a>
+            </div>
+            <div class="right">
+                <a href="wishlist.html"><i class="bi bi-suit-heart"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <a href="#" class="bag"><i class="bi bi-basket"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <div class="cart">
+                    <a href="#" class="closecart"><i class="bi bi-x"></i></a>
+                    <div id="minicart">                      
+                        <table id="list-cart" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="clean-cart" class="btn btn-dark w-25 rounded-pill">
+                            Clean Cart <i class="bi bi-trash"></i>
+                        </a> <a href="#" id="buy-item" class="btn btn-dark w-25 rounded-pill">
+                            Buy <i class="bi bi-bag-check"></i>
+                        </a>
+                    </div>
+                    <script src="cart.js"></script>
+                </div>
+                  <div class="profile"><i class="bi bi-person"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="log in.html">LOG IN</a></li>
+                            <li><a href="Sign up.html">SIGN UP</a></li>
+                            <li><a href="profile.html">ACCOUNT</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!--Sticky Navbar-->
+        <header>
+            <div class="navbar" id="navb">
+            <div class="navl">
+                <a href="home.html">Shop</a>
+                <a href="Discover.html">Discover</a>
+                <a href="Style Expert.html">Style Expert</a>
+                <a href="rental.html">Rental</a>
+                <a href="Refurbish.html">Refurbished</a>
+            </div>
+                <div class="navr">
+                <form>
+                    <input type="search" style="width:220px;">
+                    <button type="submit" style="border:none; border-radius:100%; padding-bottom:4px; "><i class="bi bi-search"></i></button>
+                </form>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="navfunc()">
+                    <i class="bi bi-list"></i>
+                  </a>
+            </div>
+            <script> 
+                function navfunc() {
+                var x = document.getElementById("navb");
+                if (x.className === "navbar") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "navbar";
+                }
+              }</script>
+        </header>
+        <div class="ctnt">
+            <div style="margin:80px 50px 150px;">
+            <ul type="none" class="l1" style="position: relative;left: 10px;top: 5px;">
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 38px;">Profile</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;"><u>Account</u></li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">Wishlist</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">Orders</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">Gift Cards</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">Returns</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">My Appointments</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">My Plan</li><br><br>
+                <li style="font-family: 'ZCOOL QingKe HuangYou', cursive; font-size: 20px;">Logout</li>
+            </ul>
+            <ul type="none" class="l2" style="position: absolute;left: 360px;bottom: 400px;"> 
+                <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 40px;position: relative;top: 455px;right: 100px;"><img width="10%" style="border: none; border-radius: 50%; width:100px; height:100px;" src="images/black avatar.png" alt="Profile Picture">Hi Vaibhav Jain</li>
+                <li style="position: relative;top: 475px;right: 100px;">
+                    <div class="border border-secondary" id="l3" style="width:1000px; color: white; background-color:rgb(75, 73, 77); padding:16px 8px 16px 8px;">
+                    <form action="" method="post">
+                        Email Id <br>
+                        <input type="email" name="email" id="email" placeholder="vj58409@gmail.com"><br><hr>
+                        Password <br>
+                        <input type="password" name="passw" id="passw" placeholder="****"><br><hr>
+                        Name <br>
+                        <input type="text" placeholder="Vaibhav Jain"><br><hr>
+                        Mobile Number <br>
+                        <input type="number" name="MN" id="MN" placeholder="9041509903"><br><hr>
+                        Date of Birth <br>
+                        <input type="text" name="dob" id="dob" placeholder="December 18, 2002"><br><hr>
+                        Address <br>
+                        <input type="text" name="address" id="address" placeholder="Address is not added"><br><br><hr>
+                        <input type="submit" class="b1">
+                        <input type="button" class="b1"  value="Edit">
+                    </form>
+                </div>
+            </li>    
+            </ul>
+        </div>
+    </div>
+
+
+
+<!--Footer-->
+<footer>
+    <div class="footer">
+        <div class="row gx-0 justify-content-start">
+            <div class="col-sm-2">
+                <h6>Get in touch</h6>
+                <ul>
+                <li><i class="bi bi-briefcase"></i> xyz ABC, India - 123456 IN</li>
+                <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210" style="text-decoration: none; color:white;">+91 9876543210</a>,<a href="tel:+911234567890" style="text-decoration: none; color:white;">+91 1234567890</a></li>
+                <li><i class="bi bi-envelope-fill"></i> <a href="mailto:idkms@jk.com" style="text-decoration: none; color:white;">idkms@jk.com</a></li>
+                <li><a href="https://www.instagram.com/rick_r0lled/" style="color: white;"><i class="bi bi-instagram" id="insta"></i></a>
+                <a href="https://twitter.com/YouGotRickRoll" style="color: white;"><i class="bi bi-twitter" id="twitter" ></i></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white;"><i class="bi bi-youtube" id="yt"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">  
+                <h6>About</h6>
+                <ul>
+                <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+                <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+            <h6>Policies</h6>
+            <ul>
+                <li>Returns & Exchanges</li>
+                <li>Privacy Policy</li>
+                <li>Cancellations</li>
+                <li>Shipping & Delivery</li>
+                <li>Terms & Conditions</li>
+            </ul>
+            </div>
+            <div class="col-sm-2">
+            <ul>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" height="50px" width="50px"> 
+                <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" height="75px" width="75px"></li>
+                <li><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" height="50px" width="50px"> 
+                 <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" height="50px" width="50px"></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+            <br>
+    <div class="foot">
+        <div class="small text-center text-muted" id="footer1"><p>Copyright &copy; 2021, All rights Reserved. Home Buddy~ Powered by Group 8</p></div>
+    </div>
+</footer>
+</body>
+</html>

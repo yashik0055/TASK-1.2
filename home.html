@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" type="image/jpg" href="images/ico.jpg">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="slide.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<!--header-->
+    <div class="header">
+        <div class="ico">
+            <a href="https://www.instagram.com/rick_r0lled/" target="_blank"><i class="bi bi-instagram" id="insta"></i></a>
+            <a href="https://twitter.com/YouGotRickRoll" target="_blank"><i class="bi bi-twitter" id="twitter" ></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube" id="yt"></i></a>
+        </div>
+        <div class="info">
+            <nav class="navlink">        
+            <a href="tel:+919876543210" class="call"><i class="bi bi-telephone-fill"></i>+919876543210</a>
+            <a href="Track Order.html"><i class="bi bi-truck"></i> Track</a>
+            <a href="About.html">About</a>
+            </nav>
+        </div>
+    </div>
+        <div id="navhead">
+            <div class="left">
+                <a href="home.html"><img class="logo" src="images/logo.png"></a>
+            </div>
+            <div class="right">
+                <a href="wishlist.html"><i class="bi bi-suit-heart"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <a href="#" class="bag"><i class="bi bi-basket"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <div class="cart">
+                    <a href="#" class="closecart"><i class="bi bi-x"></i></a>
+                    <div id="minicart">                      
+                        <table id="list-cart" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="clean-cart" class="btn btn-dark w-25 rounded-pill">
+                            Clean Cart <i class="bi bi-trash"></i>
+                        </a> <a href="payment.html" id="buy-item" class="btn btn-dark w-25 rounded-pill">
+                            Buy <i class="bi bi-bag-check"></i>
+                        </a>
+                    </div>
+                    <script src="cart.js"></script>
+                </div>
+                  <div class="profile"><i class="bi bi-person"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="log in.html">LOG IN</a></li>
+                            <li><a href="Sign up.html">SIGN UP</a></li>
+                            <li><a href="profile.html">ACCOUNT</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!--Sticky Navbar-->
+        <header>
+            <div class="navbar" id="navb">
+            <div class="navl">
+                <a href="home.html" class="active">Shop</a>
+                <a href="Discover.html">Discover</a>
+                <a href="Style Expert.html">Style Expert</a>
+                <a href="rental.html">Rental</a>
+                <a href="Refurbish.html">Refurbished</a>
+            </div>
+                <div class="navr">
+                <form>
+                    <input type="search" style="width:220px;">
+                    <button type="submit" style="border:none; border-radius:100%; padding-bottom:4px; "><i class="bi bi-search"></i></button>
+                </form>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="navfunc()">
+                    <i class="bi bi-list"></i>
+                  </a>
+            </div>
+            <script> 
+                function navfunc() {
+                var x = document.getElementById("navb");
+                if (x.className === "navbar") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "navbar";
+                }
+              }</script>
+        </header>
+<!--Content-->
+        <div class="content">
+            <div class="wrapper">
+                <div class="slider-wrap">
+                  <div id="slider" class="slider">
+                    <a href="product.html"><div class="slide"></div></a>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                    <div class="slide"></div>
+                  </div>
+                </div>
+                <div class="bttn-wrap">
+                  <i id="prev" class="bi bi-arrow-left-circle-fill bttn"></i>
+                  <i id="next" class="bi bi-arrow-right-circle-fill bttn"></i>
+                </div>
+              </div>
+              <script src="slide.js"></script>
+                
+                <br>
+                <!-- Image frames-->
+                <h1 style="text-align: center; font-family: 'ZCOOL QingKe HuangYou', cursive;">Popular Catagories</h1>
+                <div class="catagories-container">
+                        <div class="frame">
+                            <a href="product.html"><img class="img-style" src="images/furniture.jpg"></a>
+                            <div class="img-container">
+                                <p>Furniture</p>
+                            </div>
+                        </div>
+                            <div class="frame">
+                                <a href="#"><img class="img-style" src="images/painting1.png"></a>
+                                <div class="img-container">
+                                    <p>Wall art</p>
+                                </div>
+                            </div>
+                            <div class="frame">
+                                <a href="#"><img class="img-style" src="images/candle.jpg"></a>
+                                <div class="img-container">
+                                    <p>Lamps & Lighting</p>
+                                </div>
+                            </div>
+                        
+                </div>
+                <h1 style="text-align: center; font-family: 'ZCOOL QingKe HuangYou', cursive; margin-bottom:30px;">We are Home Buddy</h1>
+                <p style="font-size: 14px; font-family: 'Times New Roman', Times, serif; color: gray; margin-left:100px; margin-right:100px; margin-bottom:50px; text-align:justify;">Home Buddy presents a modern home decor collection filled with exclusive designs, high-quality products, and timeless style inspired by traditional techniques and modern trends of the global market. Offering artist-approved home decor items ranging from sustainable kitchen
+                     accessories that will become a part of your daily routine to harmonizing accents that will become the epitome of your style - our functional collections are filled with diverse designs, geometrical patterns, and artful shapes. Explore our home decor online store to indulge in the aesthetic
+                      flavor of modern rustic art and living. With a kaleidoscope of color and devotion to the smallest details - our home decor accessories are handcrafted by local artisans using ethically sourced raw material - making them good for you and the planet. So, buy our home decor items online
+                       to turn your space into a contemporary sanctuary of art.</p>
+                <div class="container">
+                <div class="row justify-content-center" id="inf">
+                    <div class="col-sm-3 text-center" id="bd"><img src="images/ico/tech.png"><br><h5>Quick<br>Support</h5></div>
+                    <div class="col-sm-3 text-center" id="bd"><img src="images/ico/care.jpg"><br><h5>Environmentally Friendly<br>Products</h5></div>
+                    <div class="col-sm-3 text-center" id="bd"><img src="images/ico/designer-homeware.png"><br><h5>Artisanal<br>Designs</h5></div>
+                    <div class="col-sm-3 text-center" ><img src="images/ico/ship.jpg"><br><h5>Fast<br>Delivery</h5></div>
+                </div>
+            </div>
+            <a style="font-size:40px; font-family: 'ZCOOL QingKe HuangYou', cursive; display: block; cursor: pointer; text-align: center; text-decoration: none; margin-top:60px;" id="open-popup-modal">Subscribe to our newsletter</a>
+            <div id="popup-modal">
+                <a class="close-modal">x</a>
+                <div class="popup-modal-content">
+                <div class="row">
+                    <div class="col-sm-6 align-self-center"> 
+                        <h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">SUBSCRIBE TO OUR NEWSLETTER</h1>
+                        <span style="color:gray;">Sign Up & Receive a <strong>₹2000 Gift Voucher</strong> at checkout towards your first Homebuddy purchase</span><br>
+                        <form style="padding-top:10px;">
+                            <span>Email Address</span><br>
+                            <input type="email" style="width:100%;"><br>
+                            <button class="btn btn-dark" id="sub">Subscribe</button>
+                        </form>
+                            <span class="icons">
+                            <a href="https://www.instagram.com/rick_r0lled/" target="_blank"><i class="bi bi-instagram" id="insta"></i></a>
+                            <a href="https://twitter.com/YouGotRickRoll" target="_blank"><i class="bi bi-twitter" id="twitter" ></i></a>
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube" id="yt"></i></a>
+                        </span>
+                        </div>
+                    <div class="col-sm-6">
+                        <div class="modal-img">
+                            <img src="images/thumb-1920-542586.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="popup.js"></script>
+        </div>
+        </div>
+        
+<!--footer-->
+        <footer>
+            <div class="footer">
+                <div class="row gx-0 justify-content-between">
+                    <div class="col-sm-2">
+                        <h6>Get in touch</h6>
+                        <ul>
+                        <li><i class="bi bi-briefcase"></i> xyz ABC, India - 123456 IN</li>
+                        <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210" style="text-decoration: none; color:white;">+91 9876543210</a>,<a href="tel:+911234567890" style="text-decoration: none; color:white;">+91 1234567890</a></li>
+                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:idkms@jk.com" style="text-decoration: none; color:white;">idkms@jk.com</a></li>
+                        <li><a href="https://www.instagram.com/rick_r0lled/" style="color: white;"><i class="bi bi-instagram" id="insta"></i></a>
+                        <a href="https://twitter.com/YouGotRickRoll" style="color: white;"><i class="bi bi-twitter" id="twitter" ></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white;"><i class="bi bi-youtube" id="yt"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">  
+                        <h6>About</h6>
+                        <ul>
+                        <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    <h6>Policies</h6>
+                    <ul>
+                        <li>Returns & Exchanges</li>
+                        <li>Privacy Policy</li>
+                        <li>Cancellations</li>
+                        <li>Shipping & Delivery</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    <ul>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" height="50px" width="50px"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" height="75px" width="75px"></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" height="50px" width="50px"> 
+                         <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" height="50px" width="50px"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+                    <br>
+            <div class="foot">
+                <div class="small text-center text-muted" id="footer1"><p>Copyright &copy; 2021, All rights Reserved. Home Buddy~ Powered by Group 8</p></div>
+            </div>           
+        </footer>
+</body>
+</html>

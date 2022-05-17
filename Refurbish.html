@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refurbish</title>
+    <style>
+    .content{margin-left:50px; margin-right:50px;}
+    #button{color:black; border-color:dimgray; width:200px; border-radius:30px; font-weight: bolder; font-family: 'Courier New', Courier, monospace; background-color: black;}
+    #button:hover{background-color:dimgrey;}
+    .button{font-weight:bold; color:black; font-size: x-large;}
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+    @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+    </style>
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="icon" type="image/jpg" href="images/ico.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <div class="header">
+        <div class="ico">
+            <a href="https://www.instagram.com/rick_r0lled/" target="_blank"><i class="bi bi-instagram" id="insta"></i></a>
+            <a href="https://twitter.com/YouGotRickRoll" target="_blank"><i class="bi bi-twitter" id="twitter" ></i></a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube" id="yt"></i></a>
+        </div>
+        <div class="info">
+            <nav class="navlink">        
+            <a href="tel:+919876543210" class="call"><i class="bi bi-telephone-fill"></i>+919876543210</a>
+            <a href="Track Order.html"><i class="bi bi-truck"></i> Track</a>
+            <a href="About.html">About</a>
+            </nav>
+        </div>
+    </div>
+        <div id="navhead">
+            <div class="left">
+                <a href="home.html"><img class="logo" src="images/logo.png"></a>
+            </div>
+            <div class="right">
+                <a href="wishlist.html"><i class="bi bi-suit-heart"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <a href="#" class="bag"><i class="bi bi-basket"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                    0
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                  <div class="cart">
+                    <a href="#" class="closecart"><i class="bi bi-x"></i></a>
+                    <div id="minicart">                      
+                        <table id="list-cart" class="u-full-width">
+                            <thead>
+                                <tr>
+                                    <th>Image</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Quantity</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                        <a href="#" id="clean-cart" class="btn btn-dark w-25 rounded-pill">
+                            Clean Cart <i class="bi bi-trash"></i>
+                        </a> <a href="#" id="buy-item" class="btn btn-dark w-25 rounded-pill">
+                            Buy <i class="bi bi-bag-check"></i>
+                        </a>
+                    </div>
+                    <script src="cart.js"></script>
+                </div>
+                  <div class="profile"><i class="bi bi-person"></i>
+                        <ul class="dropdown-content">
+                            <li><a href="log in.html">LOG IN</a></li>
+                            <li><a href="Sign up.html">SIGN UP</a></li>
+                            <li><a href="profile.html">ACCOUNT</a></li>
+                            <li><a href="#">MY ORDERS</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!--Sticky Navbar-->
+        <header>
+            <div class="navbar" id="navb">
+            <div class="navl">
+                <a href="home.html">Shop</a>
+                <a href="Discover.html">Discover</a>
+                <a href="Style Expert.html">Style Expert</a>
+                <a href="rental.html">Rental</a>
+                <a href="Refurbish.html" class="active">Refurbished</a>
+            </div>
+                <div class="navr">
+                <form>
+                    <input type="search" style="width:220px;">
+                    <button type="submit" style="border:none; border-radius:100%; padding-bottom:4px; "><i class="bi bi-search"></i></button>
+                </form>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="navfunc()">
+                    <i class="bi bi-list"></i>
+                  </a>
+            </div>
+            <script> 
+                function navfunc() {
+                var x = document.getElementById("navb");
+                if (x.className === "navbar") {
+                  x.className += " responsive";
+                } else {
+                  x.className = "navbar";
+                }
+              }</script>
+        </header>
+        <br><br><br>
+    <div class="content">
+    <h1 style="font-size: 45px;"><u><center>How to Refurbish Furniture :-</center></u></h1>
+    <p><center><h2>Learn how to refurbish furniture faster and easier by avoiding stripping.<br>A seasoned pro tells you how to clean, repair and restore old<br>worn finishes without messy chemical strippers.<br>Furniture refurbishing will be easier from here on out!</h2></center>
+    </p><br><br><br><hr><h1><center>FOLLOW BELOW STEPS:</center></h1>
+    <hr><br><br>
+    <table>
+        <tr>
+            <th><h1>1. How to Refurbish Furniture Without<br>Stripping: Benefits</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(1).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 5%;padding-right: 5%; font-size: 17.4px;"><center>Stripping furniture is a messy, time-consuming process. And sometimes the results aren't as great as you had hoped. Fortunately, you don't always have to resort to stripping to restore your furniture to its original luster. To show you an easier alternative, we enlisted Kevin Southwick, a furniture restoration specialist. Kevin Southwick specializes in the conservation and restoration of antiques and in custom wood finishes. He also consults in these areas. Kevin's expertise is the result of more than 20 years' experience working with and learning about wood finishes and furniture repair and furniture refinishing. We'll show you Kevin's tips for cleaning, repairing and restoring finishes without all the messy chemical strippers and tedious sanding. You'll save tons of time. And since you'll preserve the patina and character of the original finish, your furniture will retain the beauty of an antique. One word of caution, though: If you think your piece of furniture is a valuable antique, consult an expert before you do anything.<br>
+                *<i>Staining or painting outdoor furniture helps it stand up against the elements.</i></center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th rowspan="2"><img src="images\Refurbish(2).jpg"></th>
+            <th><h1>2. Assess the Finish with Mineral Spirits:</h1></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 7%;padding-right: 7%; font-size: 18px;"><center>Before you start any repairs or touch-up on your furniture refinishing, wipe on mineral spirits to help you decide what your next steps should be. The mineral spirits temporarily saturates the finish to reveal how the piece of furniture will look with nothing more than a coat of wipe-on clear finish. Don't worry; this won't harm the finish. If it looks good, all you have to do is clean the surface and apply an oil-based wipe-on finish. If the surface looks bad even when wetted with mineral spirits, you'll have to take other measures to restore the finish. We show some of these in the following steps.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th><h1>3. Clean it Up:</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(3).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 6%;padding-right: 6%; font-size: 18px;"><center>A thorough cleaning is an important first step in any furniture refinishing renewal project. Removing decades of dirt and grime often restores much of the original luster. Kevin says it's hard to believe, but it's perfectly OK to wash furniture with soap and water. Kevin recommends liquid Ivory dish soap mixed with water. Mix in the same proportion you would to wash dishes. Dip a sponge into the solution, wring it out, and use it to gently scrub the surface. A paintbrush works great for cleaning carvings and moldings. When you're done scrubbing with the soapy water, rinse the surface with a wrung-out sponge and clear water. Then dry it with a clean towel.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th rowspan="2"><img src="images\Refurbish(4).jpg"></th>
+            <th><h1>4. Fix White Rings:</h1></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 7%;padding-right: 7%; font-size: 18px;"><center>White rings can be easy to get rid of, or they can be a real nightmare. First, slather the ring with petroleum jelly and let it sit overnight. The oil from the petroleum jelly will often penetrate the finish and remove the ring or at least make it less visible. If that doesn't work, you can try a product such as Homax White Ring Remover or Liberon Ring Remover. They often work but may change the sheen. If these fixes don't work, consult a pro to see what your other options are for your furniture refinishing project.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th><h1>5. Scrape Paint Without Damaging the Finish:</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(5).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 6%;padding-right: 6%; font-size: 18px;"><center>Paint spatters are common on old furniture, and most of the time you can remove them easily without damaging the finish. Here's a trick we learned to turn an ordinary straightedge razor into a delicate paint scraper. First, wrap a layer of masking tape around each end of the blade, and then bend the blade slightly so it's curved. The masking tape holds the blade slightly off the surface so you can knock off paint spatters without the blade even touching the wood. Hold the blade perpendicular to the surface. The tape also keeps you from accidentally gouging the wood with the sharp corner of the blade. The curved blade allows you to adjust the depth of the scraper. If you tilt the blade a little, the curved center section will come closer to the surface to allow for removing really thin layers of paint for your refinishing furniture project.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th rowspan="2"><img src="images\Refurbish(6).jpg"></th>
+            <th><h1>6. Replace Missing Wood: Apply Epoxy</h1></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 5%;padding-right: 5%; font-size: 17px;"><center>If you discover missing veneer, chipped wood or a damaged molding, you can fix it easily with epoxy putty. Kevin showed us the process he uses (watch a video of him patching a piece of chipped veneer with Quickwood), and the resulting repair is so realistic that it's hard to spot. When it's hardened, the epoxy is light colored and about the density of wood. You can shape, sand and stain it like wood too, so it blends right in. Quickwood and KwikWood are two brands of this Tootsie Roll?shaped epoxy. You'll find it at home centers and specialty woodworking stores for about $9 a tube.<br><br>To use this type of epoxy, you slice off a piece with a razor blade or utility knife and knead it in your gloved hand. When the two parts are completely blended to a consistent color and the epoxy putty starts to get sticky, it's ready to use. You'll have about five or 10 minutes to apply the epoxy to the repair before it starts to harden. That's why you should only slice off as much as you can use quickly.<br><br>See photo for how to replace missing veneer. Here are a few things you can do before the putty starts to harden to reduce the amount of sanding and shaping later. First, smooth and shape the epoxy with your finger. Wet it with water first to prevent the epoxy from sticking. Then use the edge of a straightedge razor to scrape the surface almost level with the surrounding veneer. If you're repairing wood with an open grain, like oak, add grain details by making little slices with a razor while the epoxy is soft.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th><h1>7. Replace Missing Wood: Finish the Epoxy:</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(7).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 6%;padding-right: 6%; font-size: 18px;"><center>After the epoxy hardens completely, which usually takes a few hours, you can sand and stain the repair. Kevin sticks self-adhesive sandpaper to tongue depressors or craft sticks to make precision sanding blocks. You can also use spray adhesive or even plain wood glue to attach the sandpaper. Sand carefully to avoid removing the surrounding finish.<br><br>Blend the repair into the surrounding veneer by painting on gel stain to match the color and pattern of the existing grain. You could use stain touch-up markers, but Kevin prefers gel stain because it's thick enough to act like paint, and can be wiped off with a rag dampened in mineral spirits if you goof up or want to start over.<br><br>Choose two colors of stain that match the light and dark areas of the wood. Put a dab of both on a scrap of wood and create a range of colors by blending a bit of the two. Now you can use an artist's brush to create the grain. If the sheen of the patch doesn't match the rest of the wood when the stain dries, you can recoat the entire surface with wipe-on finish to even it out.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th rowspan="2"><img src="images\Refurbish(8).jpg"></th>
+            <th><h1>8. Restore the Color with Gel Stain:</h1></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 5%;padding-right: 5%; font-size: 18px;"><center>It's amazing what a coat of gel stain can do to restore a tired-looking piece of furniture. The cool part is that you don't need to strip the old finish for this to work. Kevin demonstrated the tip on this round oak table. The finish was worn and faded. He loaded a soft cloth with dark gel stain and worked it into the surface. Then he wiped if off with a clean cloth. It was a surprising transformation. Of course, gel stain won't eliminate dark water stains or cover bad defects, but it will hide fine scratches and color in areas where the finish has worn away.<br><br>There are other products, but Kevin prefers gel stain because he finds it easier to control the color and leave a thicker coat if necessary. Also, since it doesn't soak in quite as readily as thinner stains, gel stain is somewhat reversible. Before it dries, you can remove it with mineral spirits if you don't like the results. Gel stains offer some protection, but for a more durable finish or to even out the sheen, let the stain dry overnight and then apply a coat of wipe-on finish as shown below.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th><h1>9. Fill Small Cracks:</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(9).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 6%;padding-right: 6%; font-size: 18px;"><center>If you find nail holes or tiny cracks after applying the final finish, fill them with colored wax fill sticks, wax repair sticks or fill pencils, found at home centers and paint stores.<br><br>The directions tell you to rub the stick over the defect. But Kevin recommends breaking off a chunk and warming it up in your hands. Then shape it to fit the flaw and press it in with a smooth tool. He uses a 3/8-in. dowel with an angle on the end. For cracks, make a thin wafer, slide it into the crack and then work the wax in both directions to fill the crack. Buff with a soft cloth.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th rowspan="2"><img src="images\Refurbish(10).jpg"></th>
+            <th><h1>10. Get Rid of Dents:</h1></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 7%;padding-right: 7%; font-size: 18px;"><center>You can often get rid of small dents by wetting them. The moisture swells the crushed wood fibers back to their original shape. (You can't fix cuts or gouges this way, though.)<br><br>Moisture must penetrate the wood for this to work. Finishes prevent water from penetrating, so Kevin suggests making a bunch of tiny slits with a razor blade to allow the water to penetrate. Use the corner of the blade, and keep the blade parallel to the grain direction. Next, fill the dent with water and wait until it dries. If the dent is less deep but still visible, you can repeat the process. As with most of the repairs we talk about here, the repaired surface may need a coat of wipe-on finish to look its best.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br>
+    <table>
+        <tr>
+            <th><h1>11. Renew the Luster with Wipe-On Finish:</h1></th>
+            <th rowspan="2"><img src="images\Refurbish(11).jpg"></th>
+        </tr>
+        <tr>
+            <td style="padding-left: 6%;padding-right: 6%; font-size: 18px;"><center>The final step in your restoration project is to wipe on a coat of finish. After you clean your furniture piece and do any necessary repairs and stain touch-up, wiping on a coat of finish will restore the sheen and protect the surface. Any wipe-on finish will work—Minwax Wipe-on Poly is a common brand. But Kevin prefers a wipe-on gel finish like General Finishes Gel Topcoat Wipe On Urethane. It's thick, so it's easy to put on with a rag. One coat is usually all you need to rejuvenate an existing finish. To apply wipe-on finish, first put some on a clean rag. Apply it in a swirling motion like you would with car wax. Then wipe off excess finish, going in the direction of the grain. Let the finish dry overnight and you'll be ready to proudly display your furniture restoration project after you've learned how to refinish a table.</center></td>
+        </tr>
+    </table><br><br>
+    <hr><hr><br><br><br>
+    <center><h1>Get your furniture refurbish by our professionals.<br>Provide contact info for getting connected with our professionals.</h1></center><br>
+    <button class="btn btn-dark" id="trigger">Submit</button>
+    <div class="modal-form">
+        <div class="modal-form-content">
+            <span class="close-button"><i class="bi bi-x"></i></span>
+        <form id="booking" action="">
+            <h1 style="font-family: 'ZCOOL QingKe HuangYou', cursive;;">Book Your Appointment </h1>
+            <div class="tab">
+                <label>What kind of service do you want</label><br>
+                <input type="radio" name="service" value="Repair"> <label for="service"> Repair</label> 
+                <input type="radio" name="service" value="clean"> Cleaning 
+                <input type="radio" name="service" value="both"> Both<br>
+                <label>how many items do you want to refurbish</label> <br>
+                <input type="number" min="5" max="50" style="width:50%;" oninput="this.className = ''">
+            </div>
+            <div class="tab">
+                 <label>What date are you looking to book on?</label><br>
+                 <input type="date" style="width:50%;" oninput="this.className = ''"><br>
+                 <label>What Time of day?</label><br>
+                 <select name="time" oninput="this.className = ''">
+                     <option>Morning</option>
+                     <option>Midday</option>
+                     <option>afternoon</option>
+                 </select><input type="time" oninput="this.className = ''">(approx. time)
+            </div>
+            <div class="tab">
+                <div class="container">
+                    <div class="row p-1">
+                        <div class="col-sm">Name</div>
+                        <div class="col-sm"><input type="text" placeholder="full name" oninput="this.className = ''"> </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col-sm">Email Address</div>
+                        <div class="col-sm"><input type="email" placeholder="email id" oninput="this.className = ''"> </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">Mobile Number</div>
+                        <div class="col"><input type="text" placeholder="number" maxlength="10" pattern="[0-9]" title="Only numbers" oninput="this.className = ''"> </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">Address</div>
+                        <div class="col"><input type="text" placeholder="Address" oninput="this.className = ''"> </div>
+                    </div>
+                    <div class="row p-1">
+                        <div class="col">Do you have any questions or a message? (Optional)</div>
+                        <div class="col"> <textarea style="width:197px;"></textarea> </div>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow:auto;">
+                <div style="float:right;">
+                  <button  class="btn btn-dark rounded-pill" type="button"   id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                  <button  class="btn btn-dark rounded-pill" type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px;">
+                <span class="step"></span>
+                <span class="step"></span>
+                <span class="step"></span>
+              </div>
+        </form>
+        <script src="multistep form.js">
+        </script>
+        </div>
+    <script src="modal.js">
+    </script>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="row gx-0 justify-content-start">
+                <div class="col-sm-2">
+                    <h6>Get in touch</h6>
+                    <ul>
+                    <li><i class="bi bi-briefcase"></i> xyz ABC, India - 123456 IN</li>
+                    <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210" style="text-decoration: none; color:white;">+91 9876543210</a>,<a href="tel:+911234567890" style="text-decoration: none; color:white;">+91 1234567890</a></li>
+                    <li><i class="bi bi-envelope-fill"></i> <a href="mailto:idkms@jk.com" style="text-decoration: none; color:white;">idkms@jk.com</a></li>
+                    <li><a href="https://www.instagram.com/rick_r0lled/" style="color: white;"><i class="bi bi-instagram" id="insta"></i></a>
+                    <a href="https://twitter.com/YouGotRickRoll" style="color: white;"><i class="bi bi-twitter" id="twitter" ></i></a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white;"><i class="bi bi-youtube" id="yt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">  
+                    <h6>About</h6>
+                    <ul>
+                    <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+                    <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                <h6>Policies</h6>
+                <ul>
+                    <li>Returns & Exchanges</li>
+                    <li>Privacy Policy</li>
+                    <li>Cancellations</li>
+                    <li>Shipping & Delivery</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+                </div>
+                <div class="col-sm-2">
+                <ul>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" height="50px" width="50px"> 
+                    <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" height="75px" width="75px"></li>
+                    <li><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" height="50px" width="50px"> 
+                     <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" height="50px" width="50px"></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+                <br>
+        <div class="foot">
+            <div class="small text-center text-muted" id="footer1"><p>Copyright &copy; 2021, All rights Reserved. Home Buddy~ Powered by Group 8</p></div>
+        </div>
+       
+    </footer>
+</body>
+</html>

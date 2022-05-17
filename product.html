@@ -1,0 +1,510 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+        @import url('https://fonts.googleapis.com/css2?family=Arizonia&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap');
+    </style>
+    <title>Product</title>
+    <link rel="stylesheet" type="text/css" href="product.css">
+    <link rel="stylesheet" type="text/css" href="cart.css">
+    <link rel="icon" type="image/jpg" href="images/ico.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<!--Header-->
+<div class="header">
+    <div class="ico">
+        <a href="https://www.instagram.com/rick_r0lled/" target="_blank"><i class="bi bi-instagram" id="insta"></i></a>
+        <a href="https://twitter.com/YouGotRickRoll" target="_blank"><i class="bi bi-twitter" id="twitter" ></i></a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><i class="bi bi-youtube" id="yt"></i></a>
+    </div>
+    <div class="info">
+        <nav class="navlink">        
+        <a href="tel:+919876543210" class="call"><i class="bi bi-telephone-fill"></i>+919876543210</a>
+        <a href="Track Order.html"><i class="bi bi-truck"></i> Track</a>
+        <a href="About.html">About</a>
+        </nav>
+    </div>
+</div>
+    <div id="navhead">
+        <div class="left">
+            <a href="home.html"><img class="logo" src="images/logo.png"></a>
+        </div>
+        <div class="right">
+            <a href="wishlist.html"><i class="bi bi-suit-heart"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <a href="#" class="bag"><i class="bi bi-basket"></i></a><span class="position-absolutestart-80 translate-middle badge rounded-pill bg-danger">
+                0
+                <span class="visually-hidden">unread messages</span>
+              </span>
+              <div class="cart">
+                <a href="#" class="closecart"><i class="bi bi-x"></i></a>
+                <div id="minicart">                      
+                    <table id="list-cart" class="u-full-width">
+                        <thead>
+                            <tr>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="clean-cart" class="btn btn-dark w-25 rounded-pill">
+                        Clean Cart <i class="bi bi-trash"></i>
+                    </a> <a href="payment.html" id="buy-item" class="btn btn-dark w-25 rounded-pill">
+                        Buy <i class="bi bi-bag-check"></i>
+                    </a>
+                </div>
+                <script src="cart.js"></script>
+            </div>
+              <div class="profile"><i class="bi bi-person"></i>
+                    <ul class="dropdown-content">
+                        <li><a href="log in.html">LOG IN</a></li>
+                        <li><a href="Sign up.html">SIGN UP</a></li>
+                        <li><a href="profile.html">ACCOUNT</a></li>
+                        <li><a href="#">MY ORDERS</a></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <!--Sticky Navbar-->
+    <header>
+        <div class="navbar" id="navb">
+        <div class="navl">
+            <a href="home.html">Shop</a>
+            <a href="Discover.html">Discover</a>
+            <a href="Style Expert.html">Style Expert</a>
+            <a href="rental.html">Rental</a>
+            <a href="Refurbish.html">Refurbished</a>
+        </div>
+            <div class="navr">
+            <form>
+                <input type="search" style="width:220px;">
+                <button type="submit" style="border:none; border-radius:100%; padding-bottom:4px; "><i class="bi bi-search"></i></button>
+            </form>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="navfunc()">
+                <i class="bi bi-list"></i>
+              </a>
+        </div>
+        <script> 
+            function navfunc() {
+            var x = document.getElementById("navb");
+            if (x.className === "navbar") {
+              x.className += " responsive";
+            } else {
+              x.className = "navbar";
+            }
+          }</script>
+    </header>
+        <div class="content">
+            <h1 class="heading">Furniture</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/sofa1.avif">
+                                    <img class="pic-2" src="images/furniture/sofa2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                                <span class="product-discount-label">-10%</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title">KIVIK</h3>
+                                <div class="discription">4-seat sofa, with chaise longue/Hillared anthracite</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span>₹15,990</span>₹14,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" data-id="1" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/table1.avif">
+                                    <img class="pic-2" src="images/furniture/table2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">MICKE</a></h3>
+                                <div class="discription">Corner workstation, black-brown100x142 cm (39 3/8x55 7/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span>₹10,990</span>₹9999</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/cabinet1.avif">
+                                    <img class="pic-2" src="images/furniture/cabinet2.webp">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">KALLAX</a></h3>
+                                <div class="discription">Shelving unit with 4 inserts, white77x147 cm (30 3/8x57 7/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-half"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹12,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/bookcase1.avif">
+                                    <img class="pic-2" src="images/furniture/bookcase2.webp">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">KALLAX</a></h3>
+                                <div class="discription">Shelving unit, white147x147 cm (57 7/8x57 7/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-half"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹24,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/slideboard1.avif">
+                                    <img class="pic-2" src="images/furniture/slideboard2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">KLACKENÄS</a></h3>
+                                <div class="discription">Sideboard, black/oak veneer brown stained120x97 cm (47 1/4x38 1/4 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹22,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/desk1.avif">
+                                    <img class="pic-2" src="images/furniture/desk2.avif">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">UTESPELARE</a></h3>
+                                <div class="discription">Gaming desk, black160x80 cm <br>(63x31 1/2 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹14,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/gamingchair1.avif">
+                                    <img class="pic-2" src="images/furniture/gamingchair2.avif">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">UTESPELARE</a></h3>
+                                <div class="discription">Gaming chair, Bomstad grey<br><br>
+                                </div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹9,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/bench1.avif">
+                                    <img class="pic-2" src="images/furniture/bench2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">BRIMNES</a></h3>
+                                <div class="discription">TV bench, black180x41x53 cm (70 7/8x16 1/8x20 7/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹9,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/bed1.avif">
+                                    <img class="pic-2" src="images/furniture/bed2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">IDANÄS</a></h3>
+                                <div class="discription">Bed frame with storage, dark brown stained140x200 cm (55 1/8x78 3/4 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹33,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/set1.webp">
+                                    <img class="pic-2" src="images/furniture/set2.avif">
+                                </a>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">LERHAMN</a></h3>
+                                <div class="discription">Table and 4 chairs, black-brown/Vittaryd beige118x74 cm (46 1/2x29 1/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹22,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/bluesofa1.avif">
+                                    <img class="pic-2" src="images/furniture/bluesofa2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">FRIHETEN</a></h3>
+                                <div class="discription">Corner sofa-bed with storage, Skiftebo blue<br><br></div>
+                                <ul class="rating">
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-fill"></li>
+                                    <li class="bi bi-star-half"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹54,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="product-grid">
+                            <div class="product-image">
+                                <a href="#" class="image">
+                                    <img class="pic-1" src="images/furniture/wardrobe1.avif">
+                                    <img class="pic-2" src="images/furniture/wardrobe2.avif">
+                                </a>
+                                <span class="product-sale-label">hot</span>
+                            </div>
+                            <div class="product-content">
+                                <h3 class="title"><a href="#">GURSKEN</a></h3>
+                                <div class="discription">Wardrobe, light beige49x55x186 cm (19 1/2x21 5/8x73 1/8 ")</div>
+                                <ul class="rating">
+                                    <li class="bi bi-star"></li>
+                                    <li class="bi bi-star"></li>
+                                    <li class="bi bi-star"></li>
+                                    <li class="bi bi-star"></li>
+                                    <li class="bi bi-star"></li>
+                                 </ul>
+                                <div class="price"><span></span>₹6,990</div>
+                                <div class="product-button-group">
+                                    <a class="product-like-icon" href="#"><i class="bi bi-suit-heart-fill"></i></a>
+                                    <a class="add-to-cart" href="#"><i class="bi bi-bag-fill text-white"></i>ADD TO CART</a>
+                                    <a class="product-share-icon" href="#"><i class="bi bi-share-fill"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+<!--Footer-->
+        <footer>
+            <div class="footer">
+                <div class="row gx-0 justify-content-start">
+                    <div class="col-sm-2">
+                        <h6>Get in touch</h6>
+                        <ul>
+                        <li><i class="bi bi-briefcase"></i> xyz ABC, India - 123456 IN</li>
+                        <li><i class="bi bi-telephone-fill"></i> <a href="tel:+919876543210" style="text-decoration: none; color:white;">+91 9876543210</a>,<a href="tel:+911234567890" style="text-decoration: none; color:white;">+91 1234567890</a></li>
+                        <li><i class="bi bi-envelope-fill"></i> <a href="mailto:idkms@jk.com" style="text-decoration: none; color:white;">idkms@jk.com</a></li>
+                        <li><a href="https://www.instagram.com/rick_r0lled/" style="color: white;"><i class="bi bi-instagram" id="insta"></i></a>
+                        <a href="https://twitter.com/YouGotRickRoll" style="color: white;"><i class="bi bi-twitter" id="twitter" ></i></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" style="color: white;"><i class="bi bi-youtube" id="yt"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">  
+                        <h6>About</h6>
+                        <ul>
+                        <li><a href="#" style="color: white; text-decoration: none;">About us</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Contact us</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Blog</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    <h6>Policies</h6>
+                    <ul>
+                        <li>Returns & Exchanges</li>
+                        <li>Privacy Policy</li>
+                        <li>Cancellations</li>
+                        <li>Shipping & Delivery</li>
+                        <li>Terms & Conditions</li>
+                    </ul>
+                    </div>
+                    <div class="col-sm-2">
+                    <ul>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/349/349221.png" height="50px" width="50px"> 
+                        <img src="https://cdn-icons-png.flaticon.com/512/196/196566.png" height="75px" width="75px"></li>
+                        <li><img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" height="50px" width="50px"> 
+                         <img src="https://cdn-icons-png.flaticon.com/512/6124/6124998.png" height="50px" width="50px"></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+                    <br>
+            <div class="foot">
+                <div class="small text-center text-muted" id="footer1"><p>Copyright &copy; 2021, All rights Reserved. Home Buddy~ Powered by Group 8</p></div>
+            </div>
+           
+        </footer>
+</body>
+</html>

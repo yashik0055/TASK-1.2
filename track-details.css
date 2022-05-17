@@ -1,0 +1,47 @@
+body{background-image:url(images/tuxpi.com.1640551267.jpg); background-attachment: fixed; padding-top: 8%;}
+.login-page{width:500px; height:400px; background-color: rgb(231, 242, 252);  border: 1px solid black; border-width:thin; border-radius:10px; margin-left:28%; margin-top:5%;}
+.form{display:block; text-align: center;}
+.sgn-in{font-family:'Courier New', Courier, monospace; font-weight:lighter; color:black; font-size:56px;}
+.login-page {
+  -webkit-animation: cssAnimation 1s 1 ease;
+  -moz-animation: cssAnimation 1s 1 ease;
+  -o-animation: cssAnimation 1s 1 ease;
+  }
+  @-webkit-keyframes cssAnimation {
+  from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -webkit-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+  }
+  @-moz-keyframes cssAnimation {
+  from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -moz-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+  }
+  @-o-keyframes cssAnimation {
+  from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+  to { -o-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+  }
+@media{
+  .login-page{margin: auto;}
+}
+
+@media (max-width:400px) {
+    html {
+      font-size: 55%;
+    }
+    .login-page{width:400px; height:667px; margin: auto; background-attachment: fixed;} 
+    .form{padding-top:60%;}
+    }
+  @media (max-width:600px) {
+    html {
+      font-size: 55%;
+    }
+    .login-page{width:400px; height:800px; margin: auto; background-attachment: fixed;} 
+    .form{padding-top:60%;}
+  }
+  @media (max-width:800px) {
+    html {
+      font-size: 55%;
+    }
+    .login-page{width:400px; height:800px; margin: auto; background-attachment: fixed;} 
+    .form{padding-top:60%;}
+  }
+ 

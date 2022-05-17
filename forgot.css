@@ -1,0 +1,23 @@
+body{background-image:url(images/1000948.png); background-attachment: fixed;padding-top: 10%;}
+.forgot-page{width:400px; height:300px; background-color: rgb(255, 252, 252); border: 1px solid black; border-width:thin; border-radius:10px; margin-left:28%; margin-top:5%;}
+.form{display:block; text-align: center; padding-top:10%;}
+.fgt-pwd{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:rgb(0, 0, 0); text-shadow: 1px 1px #929292; font-size:15px; letter-spacing:2px;}
+.fgt-pwd:hover{color:dimgrey; text-shadow: 1px 1px white;}
+#reset{color:black; border-color:dimgray; width:173px; border-radius:30px; font-weight: bolder; font-family: 'Courier New', Courier, monospace;}
+#reset:hover{background-color:dimgrey;}
+@media{
+    .forgot-page{margin: auto;}
+  }
+.forgot-page {
+  -webkit-animation: cssAnimation 1.5s 1 ease;
+  }
+  @keyframes cssAnimation {
+    0% {
+      width: 60px;
+      height: 60px;
+      background: #f0f0f0;
+      box-shadow:  0 0 0 #cccccc,
+                   0 0 0 #ffffff,
+                  10px 10px 10px #cccccc
+      }
+  }

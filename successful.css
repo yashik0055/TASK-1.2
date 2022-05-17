@@ -1,0 +1,25 @@
+body{background-image:url(images/1000948.png); background-attachment: fixed;padding-top: 10%;}
+.forgot-page{width:500px; height:400px; background-color: rgb(255, 252, 252); border: 1px solid black; border-width:thin; border-radius:10px; margin-left:28%; margin-top:5%;}
+.form{display:block; text-align: center; padding-top:10%;}
+#lgnin{color:black; border-color:dimgray; width:173px; border-radius:30px; font-weight: bolder; font-family: 'Courier New', Courier, monospace;}
+#lgnin:hover{background-color:dimgrey;}
+@media{
+    .forgot-page{margin: auto;}
+  }
+img{
+    -webkit-animation: cssAnimation 0.6s 1 ease;
+    -moz-animation: cssAnimation 0.6s 1 ease;
+    -o-animation: cssAnimation 0.6s 1 ease;
+    }
+    @-webkit-keyframes cssAnimation {
+    from { -webkit-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+    to { -webkit-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+    }
+    @-moz-keyframes cssAnimation {
+    from { -moz-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+    to { -moz-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+    }
+    @-o-keyframes cssAnimation {
+    from { -o-transform: rotate(0deg) scale(0.1) skew(1deg) translate(0px); }
+    to { -o-transform: rotate(0deg) scale(1.0) skew(1deg) translate(0px); }
+    }
